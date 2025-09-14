@@ -33,7 +33,9 @@ st.markdown(
 
 """
 )
-
+result = st.button("Click me", type="secondary")
+if result: 
+    st.write(":material/thumb_up:")
 # You can also add text right into the web as long comments (""")
 """
 The final project aims to apply data science concepts and skills on a 
