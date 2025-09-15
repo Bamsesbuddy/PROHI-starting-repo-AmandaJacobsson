@@ -15,7 +15,10 @@ st.write("# Mushroom season :mushroom:")
 
 st.markdown(
 """    
-    Mushroom season is on the way! Lets see some statistics of how many eatable mushrooms we have picked so far :star:
+    Mushroom season is on the way! 
+    Our community has collected data on how many mushrooms had been picked :star:
+    The areas are split into Area 0 to 9.
+    Mushrooms are identified as number 0-20.
     
 """)
 import numpy as np
@@ -36,15 +39,22 @@ Lets see some statistics for how we are doing compared to the same time last yea
 
 """
 
-col1, col2, col3 = st.columns(3)
-col1.metric("Muchroom nr 10", "1679", "+ 58%")
-col2.metric("Area 0", "18 types", "+ 24%")
-col3.metric("Overall", "18754 mushrooms", "+ 211%")
+on = st.toggle("Press for statistics")
 
+if on:
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Total picked Mushroom nr 10", "1679", "+ 58%")
+    col2.metric("Types found in Area 0", "18", "+ 24%")
+    col3.metric("Mushrooms picked", "18754", "+ 211%")
 
-# # Add a slider to the sidebar:
-# add_slider = st.slider(
-#     'Select a range of values',
-#     0.0, 100.0, (25.0, 75.0)
-# )
+"""
+
+## Thanks!
+Hope you enjoyed looking at my statistics! I wish you a great mushroom season before winter starts :snowflake:
+
+"""
+
+button2 = st.button("Press if ready for wintertime", type="secondary")
+if button2: 
+    st.snow()
 
