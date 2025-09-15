@@ -11,41 +11,40 @@ st.sidebar.success("Select a tab above.")
 
 # # Page information
 
-st.write("# Welcome to Task 2 of showing my skills 👋")
+st.write("# Mushroom season :mushroom:")
 
 st.markdown(
 """    
-    ## My commits made to this project:
+    Mushroom season is on the way! Lets see some statistics of how many eatable mushrooms we have picked so far :star:
     
-    1. Explored buttons, made them clickable with a result showing
-    2. Had extreme problems with finding out why my code wouldn't run, found out i wasn'nt in the environment but managed to commit anyway? It didn't have a title since i was stressed. Thanks for your understanding. 
-
 """)
+import numpy as np
 
-result = st.button("Click me", type="secondary")
+dataframe = np.random.rand(10, 20)*200
+st.bar_chart(dataframe)
+
+result = st.button("Click me for some encouragement along the way", type="secondary")
 if result: 
     st.write(":material/thumb_up:")
+
 # You can also add text right into the web as long comments (""")
 
 """
-The final project aims to apply data science concepts and skills on a 
-medical case study that you and your team select from a public data source.
-The project assumes that you bring the technical Python skills from 
-previous courses (*DSHI*: Data Science for Health Informatics), as well as 
-the analytical skills to argue how and why specific techniques could
-enhance the problem domain related to the selected dataset.
+## Wohooo!
+Looks like we are reaching a recordbreaking season in finding mushrooms. 
+Lets see some statistics for how we are doing compared to the same time last year :fallen_leaf: 
+
 """
 
-### UNCOMMENT THE CODE BELOW TO SEE EXAMPLE OF INPUT WIDGETS
+col1, col2, col3 = st.columns(3)
+col1.metric("Muchroom nr 10", "1679", "+ 58%")
+col2.metric("Area 0", "18 types", "+ 24%")
+col3.metric("Overall", "18754 mushrooms", "+ 211%")
 
-# # DATAFRAME MANAGEMENT
-import numpy as np
-
-dataframe = np.random.randn(10, 20)
-st.dataframe(dataframe)
 
 # # Add a slider to the sidebar:
-add_slider = st.slider(
-     'Select a range of values',
-     0.0, 100.0, (25.0, 75.0)
- )
+# add_slider = st.slider(
+#     'Select a range of values',
+#     0.0, 100.0, (25.0, 75.0)
+# )
+
