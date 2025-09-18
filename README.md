@@ -10,10 +10,13 @@ _Note that this file is written in **MarkDown** language. A reference is availab
 _Here you can include images, like the logo from SU_
 
 ![Your dashboard](./assets/project-logo.jpg)
+![Your dashboard](./assets/Skärmbild%202025-09-18%20134811.png)
+![Your dashboard](./assets/Skärmbild%202025-09-18%20134827.png)
+![Your dashboard](./assets/Skärmbild%202025-09-18%20134835.png)
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+This project contains some random statistics of how many mushrooms were gathered so far this season, by area and by mushroom.  
 
 ## System description
 
@@ -55,4 +58,4 @@ Tested on Python 3.12.7 with the following packages:
 
 ## Contributors
 
-_Add the project's authors, contact information, and links to websites or portfolios._
+Author: Amanda Jacobsson 
